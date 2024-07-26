@@ -10,15 +10,14 @@ import {
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyBV5VZpswNhQfYGQHk3bXEiA2kAryZGoSw",
-    authDomain: "shield-tourism.firebaseapp.com",
-    projectId: "shield-tourism",
-    storageBucket: "shield-tourism.appspot.com",
-    messagingSenderId: "230014620072",
-    appId: "1:230014620072:web:496bb1059c9894d2e74d9d",
-    measurementId: "G-3JQ3NSPCN5"
-  };
-
+  apiKey: "AIzaSyBV5VZpswNhQfYGQHk3bXEiA2kAryZGoSw",
+  authDomain: "shield-tourism.firebaseapp.com",
+  projectId: "shield-tourism",
+  storageBucket: "shield-tourism.appspot.com",
+  messagingSenderId: "230014620072",
+  appId: "1:230014620072:web:496bb1059c9894d2e74d9d",
+  measurementId: "G-3JQ3NSPCN5"
+};
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 const auth = getAuth();
@@ -84,7 +83,7 @@ createacctbtn.addEventListener("click", function () {
         const user = userCredential.user;
         // ...
         window.alert("Success! Account created.");
-        window.location = "./destinations.html";
+        window.location = "./vuams.html";
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -108,7 +107,7 @@ submitButton.addEventListener("click", function () {
       const user = userCredential.user;
 
       window.alert("Success! Welcome back!");
-      window.location = "./destinations.html";
+      window.location = "./vuams.html";
 
       // ...
     })
