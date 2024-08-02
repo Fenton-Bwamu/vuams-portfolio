@@ -490,3 +490,37 @@
    margin-top: -10px;
    display: block;
 }
+
+/* Default to light mode */
+:root {
+   --background-color: #c800f0;
+   --text-color: #ffffff;
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+   --background-color: #000000;
+   --text-color: #ffffff;
+}
+
+/* Apply the variables */
+body {
+   background-color: var(--background-color);
+   color: var(--text-color);
+}
+
+/* Additional styling for demonstration */
+.container {
+   padding: 30px;
+  text-align: right;
+}
+
+button {
+   margin-top: 20px;
+   padding: 10px 20px;
+   cursor: pointer;
+   margin-bottom: 50px;
+}
+body {
+   transition: background-color 0.3s, color 0.3s;
+}

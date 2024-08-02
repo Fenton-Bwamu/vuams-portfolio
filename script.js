@@ -45,9 +45,37 @@ ScrollReveal().reveal('.home-content h1,.about-img',{origin:'left'});
 ScrollReveal().reveal('.home-content p,.about-content',{origin:'right'});
 
 const typed = new Typed('.multiple-text',{
-    strings:['CSE Student at NMIT ','Frontend developer'],
-    typeSpeed:100,
-    backSpeed:100,
+    strings:['A developer at SHIELD ','Frontend developer','A Football Coach At TERMINUS SOCCER ACADEMY'],
+    typeSpeed:150,
+    backSpeed:150,
     backDelay:1000,
     loop:true
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    // Set initial icon based on theme
+    if (currentTheme === 'dark') {
+        toggleButton.innerHTML = '<i class="fas fa-moon"></i>';
+    } else {
+        toggleButton.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+
+    toggleButton.addEventListener('click', () => {
+        const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+
+        // Toggle icon
+        if (theme === 'dark') {
+            toggleButton.innerHTML = '<i class="fas fa-moon"></i>';
+        } else {
+            toggleButton.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+    });
+});
+
