@@ -14,24 +14,23 @@
     <body>
         <!--body-->
         <header class="header">
-            <a href="#" class="logo">Fenton</a>
+            <a href="#" class="logo"><img src="https://pbs.twimg.com/media/F6ZyrDHWgAA_bp8.jpg" alt=""></a>
             <i class='bx bx-menu' id="menu-icon"></i>
             <nav class="navbar">
                 <a href="#home" class="active">Home</a>
                 <a href="#about">ABOUT</a>
                 <a href="#services">SERVICES</a>
                 <a href="#projects">PROJECTS</a>
+                <a href="#skills">SKILLS</a>
                 <a href="#contact">CONTACT</a>
             </nav>
-            <div class="container">
-                <button id="theme-toggle"><i class="fas fa-sun"></i></button>
-            </div>
+            <button onclick="myFunction()"><i class="fas fa-sun" style="font-size:30px;color:rgb(0, 180, 235);"></i></i></button>
         </header>
 
        
         <section class="home" id="home">
             <div class="home-content">
-                <h3>Hello,It's Me</h3>
+                <h1>Hello,It's Me</h1>
                 <h1>Fenton</h1>
                 <h3>And I'm a <span class="multiple-text"></span></h3>
                 <div class="social-media">
@@ -43,7 +42,7 @@
                 <a href="Screenshot (14).png" class="btn">Download MY CV</a>
             </div>
             <div class="home-img">
-                <img src="VUAM.png" alt="">
+                <img src="collo.jpg"height="auto" width="100%" alt="">
             </div>
         </section>
         <section class="about" id="about">
@@ -61,11 +60,12 @@
                     Stress Management: 
                     Team Building: 
                     Techniques like mindfulness and deep breathing exercises to handle pressure. <br>
-                    Activities to foster team cohesion and a positive team environme
+                    Activities to foster team cohesion and a positive team environment. <br>
                     </p>
-                 <a href="#"class="btn">Read More</a>   
+                 <a href="https://sportsedtv.com/blog/how-to-teach-soccer-skills-to-children-a-guide-for-parents-and-coaches#:~:text=Start%20with%20the%20basics,importance%20of%20teamwork%20and%20sportsmanship."class="btn">Read More</a>   
             </div>
         </section>
+       
         <section class="services"id="services">
             <h2 class="heading">Our<span>Services</span></h2>
 
@@ -76,14 +76,14 @@
                     <p>Motivated designer and developer
                          with experience creating custom websites through PHP and CSS. 
                          Strong collaboration skills and proven history of application development. HTML and JavaScript. MS Access and MySQL.</p>
-                    <a href="#"class="btn">Read More</a>
+                    <a href="https://blog.hubspot.com/website/website-development"class="btn">Read More</a>
                 </div>
         
                 <div class="services-box">
                     <i class='bx bx-crop' ></i>
                     <h3>Web Design</h3>
                     <p>You cannot make a good design if you do not understand people; design is made for people.</p>
-                    <a href="#"class="btn">Read More</a>
+                    <a href="https://medium.com/@Vincentxia77/beginners-guide-how-to-learn-web-designing-at-home-796c01b8c0c2"class="btn">Read More</a>
                 </div>
             
                 <div class="services-box">
@@ -91,7 +91,7 @@
                     <h3>App Design</h3>
                     <p>I'm UI/UX Designer with a great passion to my work. The main goal is to create modern, attractive and user-friendly interfaces and find creative and simple solutions for your business.
                         </p>
-                    <a href="#"class="btn">Read More</a>
+                    <a href="https://dribbble.com/tags/mobile-app-design"class="btn">Read More</a>
                 </div>
             </div>
         </section>
@@ -103,7 +103,7 @@
                     <div class="portfolio-layer">
                         <h4>Perssonal Portfolio</h4>
                         <p>In this project I try making my own portfolio website for myself. Showcase my projects, my social media handles, my experience on the website.</p>
-                        <a href="https://fenton123456789.github.io/MY-PORTFOLIO/"><i class='bx bx-link-external' ></i></a>
+                        <a href="https://webflow.com/blog/personal-website-examples"><i class='bx bx-link-external' ></i></a>
                     </div>
                 </div>
                 <div class="portfolio-box">
@@ -157,6 +157,45 @@
                 </div>
             </div>
         </section>
+        <section class="skills" id="skills">
+            <h2 class="heading">My<span>Skills</span></h2>
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar">
+                    <div class="skill-percentage" data-skill="98%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="skill-bar">
+                    <div class="skill-percentage" data-skill="85%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="skill-bar">
+                    <div class="skill-percentage" data-skill="70%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar">
+                    <div class="skill-percentage" data-skill="65%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">PHP</div>
+                <div class="skill-bar">
+                    <div class="skill-percentage" data-skill="50%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">My SQL</div>
+                <div class="skill-bar">
+                    <div class="skill-percentage" data-skill="45%"></div>
+                </div>
+            </div>
+        </section>
         <section class="contact"id="contact">
             <h2 class="heading">Contact<span>ME!</span></h2>
 
@@ -207,6 +246,12 @@
                 .catch(error => console.error('Error!', error.message))
             })
           </script>
+          <script>
+            function myFunction() {
+               var element = document.body;
+               element.classList.toggle("dark-mode");
+            }
+            </script>
           
     </body>
 </html>

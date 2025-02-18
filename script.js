@@ -46,8 +46,8 @@ ScrollReveal().reveal('.home-content p,.about-content',{origin:'right'});
 
 const typed = new Typed('.multiple-text',{
     strings:['A developer at SHIELD ','Frontend developer','A Football Coach At TERMINUS SOCCER ACADEMY'],
-    typeSpeed:150,
-    backSpeed:150,
+    typeSpeed:100,
+    backSpeed:100,
     backDelay:1000,
     loop:true
 });
@@ -79,3 +79,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const skillBars = document.querySelectorAll('.skill-percentage');
+
+    skillBars.forEach(skillBar => {
+        const skillPercentage = skillBar.getAttribute('data-skill');
+        skillBar.style.width = skillPercentage;
+    });
+});
